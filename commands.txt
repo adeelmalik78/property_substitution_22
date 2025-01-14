@@ -1,0 +1,22 @@
+liquibase --contexts=DEV update-sql
+
+liquibase --contexts=DEV update
+
+liquibase --contexts=DEV rollback-one-update-sql
+
+liquibase --contexts=DEV rollback-one-update --force
+
+
+
+liquibase --contexts=DEV update --liquibaseSchemaName=CMS_DEV 
+
+liquibase --contexts=DEV rollback-one-update --force --liquibaseSchemaName=CMS_DEV
+
+liquibase --defaultsFile=liquibase.properties --changeLogFile=changelog.xml --contexts=DEV rollbackOneChangeSet --changeSetId="DB-1011" --changeSetAuthor="nvoxland" --changeSetPath="changelog.xml" --force --liquibaseSchemaName=CMS_DEV
+
+liquibase history --liquibaseSchemaName=CMS_DEV 
+
+
+--changesetAuthor="u843739" --changesetId=HXLW-100 --changesetPath=changelog.xml --force --liquibaseCatalogName=EDS
+
+

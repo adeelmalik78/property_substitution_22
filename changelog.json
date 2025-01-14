@@ -1,0 +1,32 @@
+{ "databaseChangeLog": [
+    {
+        "property": {
+            "name": "db.name",
+            "value": "datasilo_dev",
+            "context": "dev"
+        }
+    },
+    {
+        "property": {
+            "name": "db.name",
+            "value": "datasilo_qa",
+            "context": "qa"
+        }
+    },
+    {
+        "property": {
+            "name": "db.name",
+            "value": "datasilo",
+            "context": "prod"        }
+    },
+    {
+        "includeAll": {
+            "path": "tiger/"
+        }
+    },
+    {
+        "includeAll": {
+            "path": "lion/"
+        }
+    }
+  ]}
