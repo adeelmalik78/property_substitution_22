@@ -19,6 +19,10 @@ stages:
     actions:
     - type: liquibase
       # if: "${LBCOMMAND} == update"
+      command: update-sql
+
+    - type: liquibase
+      # if: "${LBCOMMAND} == update"
       command: update
 
 endStage:
