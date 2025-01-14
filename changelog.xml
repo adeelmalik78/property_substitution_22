@@ -11,9 +11,9 @@
     http://www.liquibase.org/xml/ns/pro 
     http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd" >
 
-	<property name="db.name" value="datasilo_dev" context="dev"/>
-	<property name="db.name" value="datasilo_qa" context="qa"/>
-	<property name="db.name" value="datasilo" context="prod"/>
+	<property name="db.env" value="datasilo_dev" context="dev"/>
+	<property name="db.env" value="datasilo_qa" context="qa"/>
+	<property name="db.env" value="datasilo" context="prod"/>
 
   <!-- CLI: liquibase updateSql -Ddb.name=wrb_dev -->
 

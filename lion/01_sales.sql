@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset amalik:1
-create table ${db.name}.sales (
+create table ${db.env}.sales (
       id int primary key,
       name varchar(50) not null,
       address1 varchars(50)
