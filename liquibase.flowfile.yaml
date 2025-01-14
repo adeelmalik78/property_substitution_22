@@ -4,8 +4,8 @@ globalVariables:
 stages:
   Status:
     actions:
-    - type: liquibase
-      command: validate
+    # - type: liquibase
+    #   command: validate
 
     - type: liquibase
       command: status
