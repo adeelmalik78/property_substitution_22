@@ -21,9 +21,9 @@ pipeline {
 		stage('Workspace') {
 			steps {
 			
-			    script {
+			    // script {
 				//   currentBuild.displayName = "#" +env.BUILD_NUMBER + " ${JIRA}"
-				}
+				// }
 			
 				// Clean before build
 				cleanWs() // This requires ws-cleanup plugin
